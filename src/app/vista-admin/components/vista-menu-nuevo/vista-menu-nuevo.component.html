@@ -1,0 +1,141 @@
+
+<div>
+  <h3>Menú de la semana <i class="material-icons left">restaurant</i></h3>
+  <hr>
+  <div className="SplitPane row center-xs">
+  <div className="center-xs-12">
+  <table class = "table">
+  <tr>
+    <th ></th>     
+    <th class="th">LUNES</th>           
+    <th class="th">MARTES</th>
+    <th class="th">MIERCOLES</th>
+    <th class="th">JUEVES</th>
+    <th class="th">VIERNES</th>
+    <th class="th">SABADO</th>
+    <th class="th">DOMINGO</th>
+  </tr>
+  <tr>
+      <td class="th" >DESAYUNO</td>
+      <td class="td" >
+        <input type="text" placeholder="Nombre" value="arroz con leche" [ngModel]="menu[0]?.comidas[0].nombre" (ngModelChange)="menu[0].comidas[0].nombre= $event" />
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[0]?.comidas[0].descripcion" (ngModelChange)="menu[0].comidas[0].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche"  [ngModel]="menu[1]?.comidas[0].nombre" (ngModelChange)="menu[1].comidas[0].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[1]?.comidas[0].descripcion" (ngModelChange)="menu[1].comidas[0].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche"  [ngModel]="menu[2]?.comidas[0].nombre" (ngModelChange)="menu[2].comidas[0].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[2]?.comidas[0].descripcion" (ngModelChange)="menu[2].comidas[0].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche"  [ngModel]="menu[3]?.comidas[0].nombre" (ngModelChange)="menu[3].comidas[0].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[3]?.comidas[0].descripcion" (ngModelChange)="menu[3].comidas[0].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche"  [ngModel]="menu[4]?.comidas[0].nombre" (ngModelChange)="menu[4].comidas[0].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[4]?.comidas[0].descripcion" (ngModelChange)="menu[4].comidas[0].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche"  [ngModel]="menu[5]?.comidas[0].nombre" (ngModelChange)="menu[5].comidas[0].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[5]?.comidas[0].descripcion" (ngModelChange)="menu[5].comidas[0].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche"  [ngModel]="menu[6]?.comidas[0].nombre" (ngModelChange)="menu[6].comidas[0].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[6]?.comidas[0].descripcion" (ngModelChange)="menu[6].comidas[0].descripcion= $event"></textarea>
+      </td>
+  </tr>
+  <tr>
+      <td class="th" >ALMUERZO</td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[0]?.comidas[1].nombre" (ngModelChange)="menu[0].comidas[1].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[0]?.comidas[1].descripcion" (ngModelChange)="menu[0].comidas[1].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[1]?.comidas[1].nombre" (ngModelChange)="menu[1].comidas[1].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[1]?.comidas[1].descripcion" (ngModelChange)="menu[1].comidas[1].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[2]?.comidas[1].nombre" (ngModelChange)="menu[2].comidas[1].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[2]?.comidas[1].descripcion" (ngModelChange)="menu[2].comidas[1].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[3]?.comidas[1].nombre" (ngModelChange)="menu[3].comidas[1].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[3]?.comidas[1].descripcion" (ngModelChange)="menu[3].comidas[1].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[4]?.comidas[1].nombre" (ngModelChange)="menu[4].comidas[1].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[4]?.comidas[1].descripcion" (ngModelChange)="menu[4].comidas[1].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[5]?.comidas[1].nombre" (ngModelChange)="menu[5].comidas[1].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[5]?.comidas[1].descripcion" (ngModelChange)="menu[5].comidas[1].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[6]?.comidas[1].nombre" (ngModelChange)="menu[6].comidas[1].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[6]?.comidas[1].descripcion" (ngModelChange)="menu[6].comidas[1].descripcion= $event"></textarea>
+      </td>
+  </tr>
+  <tr>
+      <td class="th">CENA</td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[0]?.comidas[2].nombre" (ngModelChange)="menu[0].comidas[2].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[0]?.comidas[2].descripcion" (ngModelChange)="menu[0].comidas[2].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[1]?.comidas[2].nombre" (ngModelChange)="menu[1].comidas[2].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[1]?.comidas[2].descripcion" (ngModelChange)="menu[1].comidas[2].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[2]?.comidas[2].nombre" (ngModelChange)="menu[2].comidas[2].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[2]?.comidas[2].descripcion" (ngModelChange)="menu[2].comidas[2].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[3]?.comidas[2].nombre" (ngModelChange)="menu[3].comidas[2].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[3]?.comidas[2].descripcion" (ngModelChange)="menu[3].comidas[2].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[4]?.comidas[2].nombre" (ngModelChange)="menu[4].comidas[2].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[4]?.comidas[2].descripcion" (ngModelChange)="menu[4].comidas[2].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[5]?.comidas[2].nombre" (ngModelChange)="menu[5].comidas[2].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[5]?.comidas[2].descripcion" (ngModelChange)="menu[5].comidas[2].descripcion= $event"></textarea>
+      </td>
+      <td class="td">
+        <input type="text" value="arroz con leche" [ngModel]="menu[6]?.comidas[2].nombre" (ngModelChange)="menu[6].comidas[2].nombre= $event"/>
+        <label>Descripción:</label>
+        <textarea [ngModel]="menu[6]?.comidas[2].descripcion" (ngModelChange)="menu[6].comidas[2].descripcion= $event"></textarea>
+      </td>
+  </tr>
+</table>
+</div>
+</div>
+<div class="SplitPane-right">
+    <button type="submit" (click)="GuardarMenu(menu)" >Crear<i class="material-icons left">restaurant</i></button>
+</div>
+
+</div>
+
+<pre>{{menu | json }}</pre>
